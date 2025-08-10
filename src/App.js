@@ -7,6 +7,7 @@ import Chapter3 from "./ch/ch-3/chapter-3.jsx"; // Importing Chapter
 import Chapter4 from "./ch/ch-4/chapter-4.jsx"; // Importing Chapter 4
 import Chapter6 from "./ch/ch-6/Chapter-6.jsx"; // Importing Chapter 6
 import Chapter7 from "./ch/ch-7/main.jsx"; // Importing Chapter 7
+import LoginForm from "./ch/ch-9/LoginForm.jsx";
 
 function App() {
   return (
@@ -27,9 +28,13 @@ function App() {
         <h1>Chapter 6: Hooks Basics</h1>
         <Chapter6 />
       </section>
-      <section>
+      <section style={{ display: "none" }}>
         <h1>Chapter 7: React Router</h1>
         <Chapter7 />
+      </section>
+      <section>
+        <h1>Chapter 9: React Form</h1>
+        <LoginForm />
       </section>
     </React.Fragment>
   );
