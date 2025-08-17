@@ -9,10 +9,11 @@ import Chapter6 from "./ch/ch-6/Chapter-6.jsx"; // Importing Chapter 6
 import Chapter10 from "./ch/ch-10/Chapter10.jsx"; // Importing Chapter 7
 import LoginForm from "./ch/ch-9/LoginForm.jsx";
 import Chapter7 from "./ch/ch-7/main";
+import Chapter11 from "./ch/ch-11/Chapter11.jsx"; // Importing Chapter 11
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <section
         style={{
           display: "none",
@@ -37,11 +38,15 @@ function App() {
         <h1>Chapter 9: React Form</h1>
         <LoginForm />
       </section>
-      <section>
+      <section style={{ display: "none" }}>
         <h1>Chapter 10: Fetching Data</h1>
         <Chapter10 />
       </section>
-    </React.Fragment>
+      <section>
+        <h1>Chapter 11: Advanced React Hooks & Optimization</h1>
+        <Chapter11 />
+      </section>
+    </>
   );
 }
 
